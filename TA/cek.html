@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<style>
+			#flip{
+				padding:10px;
+				text-align:left;
+			}
+			#kotak{
+				display:none;
+				width:500px;
+				list-style-type:none;
+			}
+			ul.isi{
+				color:black;
+				text-align:center;
+				list-style-type:none;
+				padding:5px;
+				overflow:hidden;
+				width:200px;
+				height:80px;
+			}
+			li{
+				color:white;
+				padding:10px;
+				text-align:left;
+			}
+			li a{
+				background-color:white;
+				display:inline-block;
+				padding:20px 20px;
+				text-decoration:none;
+				text-align:center;
+			}
+			.isiPRODUCT{
+				background-color:white;
+				display:inline-block;
+				padding:0px;
+				width:100px;
+				height:25px;
+				text-decoration:none;
+				text-align:left;
+			}
+			li a:hover,.PRODUCT:hover .isiPRODUCT, .YAMAHA:hover .isiYAMAHA, .HONDA:hover .isiHONDA, .DUCATI:hover .isiDUCATI, .BMW:hover .isiBMW{
+				background-color:yellow;
+				color:blue;
+			}
+			a.active{
+				background-color:red;
+				color:white;
+			}
+			li.PRODUCT{
+				display:inline-block;
+			}
+			.bPRODUCT{
+				display:none;
+				position:absolute;
+				background-color:#f9f9f9;
+				min-width:150px;
+				box-shadow:0px 8px 16px 0px rgba(0,0,0,0.4);
+				z-index:1;
+			}
+			.bPRODUCT a{
+				color:#000;
+				padding:12px 50px;
+				text-decoration:none;
+				display:block;
+				text-align:left;
+			}
+			.bPRODUCT:hover, .bYAMAHA:hover, .bHONDA:hover, .bDUCATI:hover, .bBMW:hover{
+				background-color:white;
+			}
+			.PRODUCT:hover .bPRODUCT{
+				display:block;
+			}
+			.isiYAMAHA, .isiHONDA, .isiDUCATI, .isiBMW{
+				display:inline-block;
+				padding:0px 0px;
+				text-decoration:none;
+				text-align:center;
+			}
+			li.YAMAHA, li.HONDA, li.DUCATI, li.BMW{
+				display:inline-block;
+			}
+			.bYAMAHA, .bHONDA, .bDUCATI, .bBMW{
+				display:none;
+				position:absolute;
+				margin:0px 100px;
+				background-color:#f9f9f9;
+				min-width:250px;
+				box-shadow:0px 0px 0px 0px rgba(0,0,0,0.4);
+				z-index:1;
+			}
+			.bYAMAHA a, .bHONDA a, .bDUCATI a, .bBMW a{
+				color:#000;
+				padding:12px 0px;
+				text-decoration:none;
+				display:block;
+				text-align:center;
+			}
+			.YAMAHA:hover .bYAMAHA, .HONDA:hover .bHONDA, .DUCATI:hover .bDUCATI, .BMW:hover .bBMW{
+				display:block;
+			}
+		</style>
+    </head>
+    <body>
+        <script src="jquery-3.2.1.min.js">
+		</script>
+        <script>
+            $(document).ready(function() {
+                $("#flip").click(function() {
+                    $("#kotak").slideToggle("slow");
+                });
+            });
+        </script>
+        <div id="flip">
+			<img src="images/menu.png" width="70" height="70px"></img>
+		</div>
+			<ul id="kotak">
+				<li><a class="active" href="#HOME">HOME</a></li>
+				<li class="PRODUCT"><a class="isiPRODUCT" href="#PRODUCT">PRODUCT</a>
+					<div class="bPRODUCT">
+						<ul class="isi">
+							<li class="DUCATI"><a class="isiDUCATI" href="#DUCATI"><img src="images/logoducati.png" height="30px" width="30px"></img>DUCATI</a>
+								<div class="bDUCATI">
+									<a href="#ducati959"><img src="images/ducati959.png" height="100px" width="150px"></img><br>959 PANIGALE CORSE</a>
+									<a href="#ducatisuper"><img src="images/ducatisuper.png" height="100px" width="150px"></img><br>SUPER SPORT</a>
+								</div>
+							</li>
+						</ul>
+						<ul class="isi">
+							<li class="BMW"><a class="isiBMW" href="#BMW"><img src="images/logobmw.png" height="30px" width="30px"></img>BMW</a>
+								<div class="bBMW">
+									<a href="#bmwrr"><img src="images/bmwrr.png" height="100px" width="150px"></img><br>S1000RR</a>
+									<a href="#bmwrs"><img src="images/bmwrs.png" height="100px" width="150px"></img><br>R1200RS</a>
+									<a href="#bmwhp"><img src="images/bmwhp.png" height="100px" width="150px"></img><br>HP4 RACE</a>
+								</div>
+							</li>
+						</ul>
+						<ul class="isi">
+							<li class="YAMAHA"><a class="isiYAMAHA" href="#YAMAHA"><img src="images/logoyamaha.png" height="30px" width="30px"></img>YAMAHA</a>
+								<div class="bYAMAHA">
+									<a href="pages/r1page.html"><img src="images/yamahar1.png" height="100px" width="150px"></img><br>Yamaha R1</a>
+									<a href="#yamahar1m"><img src="images/yamahar1m.png" height="100px" width="150px"></img><br>Yamaha R1M</a>
+								</div>
+							</li>
+						</ul>
+						<ul class="isi">
+							<li class="HONDA"><a class="isiHONDA" href="#HONDA"><img src="images/logohonda.png" height="30px" width="30px"></img>HONDA</a>
+								<div class="bHONDA">
+									<a href="#cbr1"><img src="images/cbr1.png" height="100px" width="150px"></img><br>CBR1000RR SP</a>
+									<a href="#cbr2"><img src="images/cbr2.png" height="100px" width="150px"></img><br>CBR1000RR SP2</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#HOME">APPAREL</a></li>
+				<li><a href="#HOME">ABOUT US</a></li>
+			</ul>
+    </body>
+</html>

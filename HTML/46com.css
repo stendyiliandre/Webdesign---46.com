@@ -1,0 +1,112 @@
+body {
+	background-image : url(../images/background.jpg);
+	background-size : 100%;
+	background-repeat : no-repeat;
+	background-attachment : fixed;				
+	margin : 0px;
+	font-family : eras itc;
+	font-size : 20px;
+}
+li#regist{
+	float : right;
+	padding : 10px;
+	display : inline;
+	color : white;
+}
+.ducati, .yamaha, .honda, .bmw{
+	float:left;
+	width:1200px;
+	background-color:#ccc;
+	padding:10px;
+	margin-right:20px;
+	margin-left:20px;
+}
+.ducati {
+	background-image : url(../images/ducaticover.jpg);
+	background-size : 100%;
+	background-repeat : no-repeat;
+	margin-top:20px;
+	height:740px;
+}
+.bmw {
+	background-image : url(../images/bmwcover.jpg);
+	background-size : 100%;
+	background-repeat : no-repeat;
+	margin-top:20px;
+	height:640px;
+}
+.yamaha {
+	background-image : url(../images/yamahacover.jpg);
+	background-size : 100%;
+	background-repeat : no-repeat;
+	margin-top:20px;
+	height:725px;
+}
+.honda {
+	background-image : url(../images/hondacover.jpg);
+	background-size : 100%;
+	background-repeat : no-repeat;
+	margin-top:20px;
+	height:725px;
+}
+#ducaticover {
+	color : white;
+	padding-top : 600px;
+	margin : 30px;
+}
+#bmwcover {
+	color : white;
+	padding-top : 480px;
+	margin : 30px;
+}
+#yamahacover {
+	color : white;
+	padding-top : 580px;
+	margin : 30px;
+}
+#hondacover {
+	color : white;
+	padding-top : 590px;
+	margin : 30px;
+}
+
+#frame{
+	margin-left:auto;
+	margin-right:auto;
+	width:1270px;
+}
+#header{
+	background-color:black;
+	padding:10px;
+	height:50px;
+}
+#navigation{
+	background-color:#efefef;
+	padding:10px;
+	height:15px;
+}
+#Menu{
+	position:fixed;
+	width:1080px;
+	margin: 50px 0px 100px 100px;
+	text-align:center;
+}
+#footer{
+	background-color:#acacac;
+	bottom : 0;
+	padding:10px;
+	height:20px;
+	clear:both;
+	width:1270px;
+	position:fixed;
+}
+.kol2{
+	float:left;
+	width:1200px;
+	background-color:#ccc;
+	padding:10px;
+	margin-top:175px;
+	height:50px;
+	margin-right:0px;
+	margin-left:20px;
+}

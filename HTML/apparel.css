@@ -1,0 +1,47 @@
+.row::after{
+	content : "";
+	clear : both;
+	display : inline;
+}
+.kiri {
+	float : left;
+	padding : 15px;
+	width : 20%;
+	position : fixed;
+}
+.kiri ul{
+	list-style-type : none;
+	margin : 0;
+	padding : 0;
+}
+.kiri li{
+	padding : 8px;
+	margin-bottom : 7px;
+	background-color : RGB(235, 240, 30);
+	box-shadow : 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.kiri li:hover{
+	background-color : RGB(199,29,29);
+}
+
+table {
+	margin-left : 400px;
+	border-collapse:collapse;
+	width : 78%;
+}
+table, td, th {
+}
+th, td {
+	height : 50px;
+	text-align : left;
+	padding : 15px;
+}
+tr:nth-child(odd){
+	background-color : #c3e6e5;
+}
+td:hover {
+	background-color : RGB(23,227,244);
+}
+th {
+	background-color : #fff;
+}
